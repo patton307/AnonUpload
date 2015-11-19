@@ -8,10 +8,13 @@
 
 <form action="upload" enctype="multipart/form-data" method="post">
     <input type="file" name="file"/>
+    <input type="checkbox" name="isPermanent"/> <b>Make Image Permanent?</b>
+    <input type="text" placeholder="Enter a comment" name="comment"/>
     <button type="submit">Upload</button>
 </form>
 
 <div id="fileList"></div>
+
 
 <script src="jquery-2.1.4.min.js"></script>
 <script src="main.js"></script>

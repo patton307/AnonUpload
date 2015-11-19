@@ -1,6 +1,7 @@
 package com.theironyard.entities;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 /**
  * Created by landonkail on 11/18/15.
@@ -11,11 +12,15 @@ public class AnonFile {
     @Id
     @GeneratedValue
     @Column(nullable = false)
-    int id;
+    public int id;
 
     @Column(nullable = false)
     public String originalName;
 
     @Column(nullable = false)
     public String name;
+
+    public boolean isPermanent;
+
+    public String comment;
 }
